@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quilombo Digital - Cadastro</title>
+    <!-- Ligação com a folha de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho e Navegação -->
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo">Quilombo Digital</a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="painel.html">Painel</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="relatorios.html">Relatórios</a></li>
+                    <li><a href="login.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <main class="container">
+        <h2 style="text-align: center;">Cadastrar Iniciativa Comunitária</h2>
+        
+        <form class="formulario" action="painel.html" method="GET">
+            <div class="campo">
+                <label for="comunidade">Nome da comunidade</label>
+                <input type="text" id="comunidade" name="comunidade" required placeholder="Ex: Quilombo Rio das Pedras">
+            </div>
+            
+            <div class="campo">
+                <label for="responsavel">Nome do responsável</label>
+                <input type="text" id="responsavel" name="responsavel" required placeholder="Ex: Maria José da Silva">
+            </div>
+            
+            <div class="campo">
+                <label for="tipo">Tipo de atividade</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecione...</option>
+                    <option value="agricultura">Agricultura Familiar</option>
+                    <option value="artesanato">Artesanato</option>
+                    <option value="cultura">Evento Cultural</option>
+                    <option value="educacao">Educação e Oficina</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="produto">Produto ou iniciativa</label>
+                <input type="text" id="produto" name="produto" required placeholder="Ex: Produção de Farinha D'água">
+            </div>
+            
+            <div class="campo">
+                <label for="localidade">Localidade</label>
+                <input type="text" id="localidade" name="localidade" required placeholder="Ex: Município de Oriximiná - PA">
+            </div>
+            
+            <div class="campo">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" placeholder="Descreva brevemente as atividades realizadas..."></textarea>
+            </div>
+            
+            <div style="text-align: right;">
+                <button type="submit" class="botao">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="cabecalho" style="margin-top: 40px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2024 Quilombo Digital - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
