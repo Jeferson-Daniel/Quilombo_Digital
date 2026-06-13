@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quilombo Digital - Relatórios</title>
+    <title>Quilombo Digital - Relatórios e Dados</title>
     <!-- Ligação com a folha de estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,22 +26,22 @@
 
     <!-- Tabela de Relatórios -->
     <main class="container">
-        <h2>Relatórios Comunitários</h2>
-        <p class="aviso" style="margin-bottom: 20px;">Aviso: Os dados abaixo são fictícios e utilizados apenas para demonstração do sistema.</p>
+        <h2>Extração de Relatórios Consolidados</h2>
+        <p class="aviso" style="margin-bottom: 30px; font-size: 14px;">Nota Metodológica: O conjunto de dados apresentado é ilustrativo e serve apenas para validação das funcionalidades da plataforma.</p>
         
         <!-- Cards de Resumo -->
         <section class="indicadores">
-            <article class="indicador-card" style="border-left: 4px solid #1A4314;">
-                <h3>Agricultura</h3>
-                <p>15 ativas</p>
+            <article class="indicador-card" style="border-left-color: #1A4314;">
+                <h3 style="font-size: 24px;">Extrativismo</h3>
+                <p style="margin:0;">15 unidades ativas</p>
             </article>
-            <article class="indicador-card" style="border-left: 4px solid #8B5A2B;">
-                <h3>Artesanato</h3>
-                <p>8 ativas</p>
+            <article class="indicador-card" style="border-left-color: #8B5A2B;">
+                <h3 style="font-size: 24px;">Artesanato</h3>
+                <p style="margin:0;">8 núcleos mapeados</p>
             </article>
-            <article class="indicador-card" style="border-left: 4px solid #C5A059;">
-                <h3>Eventos</h3>
-                <p>3 agendados</p>
+            <article class="indicador-card" style="border-left-color: #C5A059;">
+                <h3 style="font-size: 24px;">Eventos Culturais</h3>
+                <p style="margin:0;">3 eventos no cronograma</p>
             </article>
         </section>
 
@@ -50,12 +50,12 @@
             <table class="tabela">
                 <thead>
                     <tr>
-                        <th>Comunidade</th>
-                        <th>Atividade principal</th>
-                        <th>Responsável</th>
-                        <th>Produção/Iniciativa</th>
-                        <th>Situação</th>
-                        <th>Última atualização</th>
+                        <th>Unidade Comunitária</th>
+                        <th>Classificação</th>
+                        <th>Responsável Técnico</th>
+                        <th>Foco Produtivo</th>
+                        <th>Status</th>
+                        <th>Última Auditoria</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,7 +64,7 @@
                         <td>Agricultura Familiar</td>
                         <td>João Batista</td>
                         <td>Mandioca e Hortaliças</td>
-                        <td>Ativa</td>
+                        <td><span style="color: #1A4314; font-weight: bold;">Operacional</span></td>
                         <td>10/10/2023</td>
                     </tr>
                     <tr>
@@ -72,42 +72,47 @@
                         <td>Artesanato</td>
                         <td>Ana Maria</td>
                         <td>Cerâmica Tapajônica</td>
-                        <td>Ativa</td>
+                        <td><span style="color: #1A4314; font-weight: bold;">Operacional</span></td>
                         <td>12/10/2023</td>
                     </tr>
                     <tr>
                         <td>Quilombo do Carmo</td>
-                        <td>Evento Cultural</td>
+                        <td>Cultura</td>
                         <td>Mestre Tião</td>
                         <td>Festa do Marambiré</td>
-                        <td>Agendado</td>
+                        <td><span style="color: #8B5A2B; font-weight: bold;">Em planejamento</span></td>
                         <td>14/10/2023</td>
                     </tr>
                     <tr>
                         <td>Associação Rio Claro</td>
                         <td>Agricultura Familiar</td>
                         <td>Raimundo Silva</td>
-                        <td>Produção de Farinha</td>
-                        <td>Ativa</td>
+                        <td>Processamento de Farinha</td>
+                        <td><span style="color: #1A4314; font-weight: bold;">Operacional</span></td>
                         <td>15/10/2023</td>
                     </tr>
                     <tr>
                         <td>Comunidade Santa Luzia</td>
-                        <td>Educação e Oficina</td>
+                        <td>Capacitação</td>
                         <td>Prof. Helena</td>
                         <td>Oficina de Saberes Tradicionais</td>
-                        <td>Concluída</td>
+                        <td><span style="color: #555555; font-weight: bold;">Concluído</span></td>
                         <td>18/10/2023</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        
+        <div style="margin-top: 40px; text-align: center;">
+            <img src="img/cultura-afrobrasileira.jpg" alt="Manifestação cultural afro-brasileira" style="max-height: 300px; border-radius: 10px; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <p style="margin-top: 15px; font-size: 14px; color: #777;">Registro de evento cultural comunitário mantido na base de dados.</p>
+        </div>
     </main>
 
     <!-- Rodapé -->
-    <footer class="cabecalho" style="margin-top: 40px; text-align: center;">
+    <footer class="rodape">
         <div class="container">
-            <p>&copy; 2024 Quilombo Digital - Todos os direitos reservados.</p>
+            <p>&copy; 2024 Quilombo Digital - Plataforma Acadêmica de Gestão Comunitária.</p>
         </div>
     </footer>
 </body>

@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quilombo Digital - Login</title>
+    <title>Quilombo Digital - Login no Sistema</title>
     <!-- Ligação com a folha de estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="tela-login">
     <!-- Formulário de Login Centralizado -->
     <main class="card-login">
-        <h1 style="color: #C5A059;">Quilombo Digital</h1>
-        <p>Acesse sua conta</p>
+        <h1>Quilombo Digital</h1>
+        <p>Acesso ao Painel Administrativo</p>
         
-        <form action="painel.html" method="GET">
+        <form class="formulario" style="box-shadow: none; padding: 0; max-width: 100%;" action="painel.html" method="GET">
             <div class="campo" style="text-align: left;">
-                <label for="email">E-mail</label>
+                <label for="email">E-mail institucional</label>
                 <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
             </div>
             <div class="campo" style="text-align: left;">
-                <label for="senha">Senha</label>
+                <label for="senha">Senha de acesso</label>
                 <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
             </div>
-            <button type="submit" class="botao" style="width: 100%; margin-top: 10px;">Entrar</button>
+            <button type="submit" class="botao" style="width: 100%; margin-top: 15px;">Autenticar</button>
         </form>
         
-        <p style="margin-top: 20px;">
-            <a href="index.html" style="color: #FFFFFF; text-decoration: none;">&larr; Voltar à página inicial</a>
+        <p style="margin-top: 25px;">
+            <a href="index.html" style="color: #8B5A2B; text-decoration: none; font-weight: 600;">&larr; Voltar à página inicial</a>
         </p>
-        <p class="aviso" style="color: #ccc;">Aviso: Acesso visual apenas para fins de protótipo.</p>
+        <p class="aviso">Aviso acadêmico: Ambiente de protótipo de software. O acesso não requer credenciais reais no momento.</p>
     </main>
 </body>
 </html>

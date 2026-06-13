@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quilombo Digital - Painel Comunitário</title>
+    <title>Quilombo Digital - Dashboard</title>
     <!-- Ligação com a folha de estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,52 +26,54 @@
 
     <!-- Conteúdo Principal do Dashboard -->
     <main class="container">
-        <h2>Painel Comunitário</h2>
+        <h2>Dashboard Analítico</h2>
         
         <!-- Indicadores Resumidos -->
         <section class="indicadores">
             <article class="indicador-card">
                 <h3>12</h3>
-                <p>Comunidades Cadastradas</p>
+                <p>Comunidades Atendidas</p>
             </article>
             <article class="indicador-card">
                 <h3>48</h3>
-                <p>Produtores Locais</p>
+                <p>Unidades Produtivas</p>
             </article>
             <article class="indicador-card">
                 <h3>21</h3>
-                <p>Iniciativas Culturais</p>
+                <p>Iniciativas Registradas</p>
             </article>
             <article class="indicador-card">
                 <h3>8</h3>
-                <p>Relatórios Gerados</p>
+                <p>Relatórios Emitidos</p>
             </article>
         </section>
 
         <!-- Resumo e Atividades -->
-        <section class="secao-painel">
-            <h3>Resumo da plataforma</h3>
-            <p>O sistema tem crescido na região conectando mais famílias ao mercado local e organizando a agenda de festividades de forma centralizada. Acompanhe os principais indicadores acima.</p>
-            <div class="acoes-painel">
-                <a href="cadastro.html" class="botao">Novo Cadastro</a>
-                <a href="relatorios.html" class="botao">Ver Relatórios</a>
-            </div>
-        </section>
+        <div class="dashboard-grid">
+            <section class="secao-painel" style="flex: 1.5; margin-bottom: 0;">
+                <h3>Visão Global da Plataforma</h3>
+                <p>O sistema tem processado um volume crescente de registros socioeconômicos na região de abrangência. A sistematização destes dados permite uma articulação mais eficiente entre os arranjos produtivos locais e o escoamento da agricultura familiar, além de preservar informações de valor histórico-cultural.</p>
+                <div class="acoes-painel">
+                    <a href="cadastro.html" class="botao">Inserir Novo Registro</a>
+                    <a href="relatorios.html" class="botao" style="background-color: #1A4314;">Acessar Base de Dados</a>
+                </div>
+            </section>
 
-        <section class="secao-painel">
-            <h3>Atividades recentes</h3>
-            <ul>
-                <li style="margin-bottom: 10px;"><strong>Hoje:</strong> Novo artesão cadastrado (Comunidade São Pedro).</li>
-                <li style="margin-bottom: 10px;"><strong>Ontem:</strong> Feira cultural agendada para o próximo mês.</li>
-                <li><strong>Ontem:</strong> Atualização na produção de farinha (Associação Rio Claro).</li>
-            </ul>
-        </section>
+            <section class="secao-painel" style="flex: 1; margin-bottom: 0;">
+                <h3>Registro de Atividades Recentes</h3>
+                <ul style="padding-left: 20px; color: #555;">
+                    <li style="margin-bottom: 12px;"><strong>Hoje, 09:30:</strong> Homologação de novo produtor de artesanato (Comunidade São Pedro).</li>
+                    <li style="margin-bottom: 12px;"><strong>Ontem, 16:45:</strong> Agendamento de evento cultural cadastrado para a próxima quinzena.</li>
+                    <li><strong>Ontem, 14:10:</strong> Atualização de capacidade produtiva no módulo de processamento de farinha (Associação Rio Claro).</li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <!-- Rodapé -->
-    <footer class="cabecalho" style="margin-top: 40px; text-align: center;">
+    <footer class="rodape">
         <div class="container">
-            <p>&copy; 2024 Quilombo Digital - Todos os direitos reservados.</p>
+            <p>&copy; 2024 Quilombo Digital - Plataforma Acadêmica de Gestão Comunitária.</p>
         </div>
     </footer>
 </body>

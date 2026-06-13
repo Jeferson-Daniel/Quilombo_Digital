@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quilombo Digital - Cadastro</title>
+    <title>Quilombo Digital - Cadastro de Iniciativa</title>
     <!-- Ligação com a folha de estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,55 +26,56 @@
 
     <!-- Formulário de Cadastro -->
     <main class="container">
-        <h2 style="text-align: center;">Cadastrar Iniciativa Comunitária</h2>
+        <h2 style="text-align: center; margin-bottom: 10px;">Formulário de Inclusão</h2>
+        <p style="text-align: center; margin-bottom: 40px; color: #666;">Preencha os campos abaixo para registrar uma nova iniciativa na base de dados.</p>
         
         <form class="formulario" action="painel.html" method="GET">
             <div class="campo">
-                <label for="comunidade">Nome da comunidade</label>
-                <input type="text" id="comunidade" name="comunidade" required placeholder="Ex: Quilombo Rio das Pedras">
+                <label for="comunidade">Associação / Comunidade</label>
+                <input type="text" id="comunidade" name="comunidade" required placeholder="Ex: Associação dos Moradores Quilombolas...">
             </div>
             
             <div class="campo">
-                <label for="responsavel">Nome do responsável</label>
-                <input type="text" id="responsavel" name="responsavel" required placeholder="Ex: Maria José da Silva">
+                <label for="responsavel">Nome da liderança / Responsável técnico</label>
+                <input type="text" id="responsavel" name="responsavel" required placeholder="Insira o nome completo">
             </div>
             
             <div class="campo">
-                <label for="tipo">Tipo de atividade</label>
+                <label for="tipo">Classificação da atividade</label>
                 <select id="tipo" name="tipo" required>
-                    <option value="">Selecione...</option>
-                    <option value="agricultura">Agricultura Familiar</option>
-                    <option value="artesanato">Artesanato</option>
-                    <option value="cultura">Evento Cultural</option>
-                    <option value="educacao">Educação e Oficina</option>
+                    <option value="">Selecione a categoria...</option>
+                    <option value="agricultura">Agricultura Familiar / Extrativismo</option>
+                    <option value="artesanato">Artesanato e Manufatura</option>
+                    <option value="cultura">Patrimônio Cultural e Eventos</option>
+                    <option value="educacao">Capacitação e Educação</option>
                 </select>
             </div>
             
             <div class="campo">
-                <label for="produto">Produto ou iniciativa</label>
-                <input type="text" id="produto" name="produto" required placeholder="Ex: Produção de Farinha D'água">
+                <label for="produto">Descrição do eixo produtivo</label>
+                <input type="text" id="produto" name="produto" required placeholder="Ex: Beneficiamento de castanha">
             </div>
             
             <div class="campo">
-                <label for="localidade">Localidade</label>
-                <input type="text" id="localidade" name="localidade" required placeholder="Ex: Município de Oriximiná - PA">
+                <label for="localidade">Coordenadas / Localidade</label>
+                <input type="text" id="localidade" name="localidade" required placeholder="Município / Comunidade / Ramal">
             </div>
             
             <div class="campo">
-                <label for="descricao">Descrição</label>
-                <textarea id="descricao" name="descricao" placeholder="Descreva brevemente as atividades realizadas..."></textarea>
+                <label for="descricao">Parecer descritivo</label>
+                <textarea id="descricao" name="descricao" placeholder="Apresente um resumo técnico das atividades, metas e alcance social desta iniciativa..."></textarea>
             </div>
             
-            <div style="text-align: right;">
-                <button type="submit" class="botao">Cadastrar</button>
+            <div style="text-align: right; margin-top: 10px;">
+                <button type="submit" class="botao">Finalizar Cadastro</button>
             </div>
         </form>
     </main>
 
     <!-- Rodapé -->
-    <footer class="cabecalho" style="margin-top: 40px; text-align: center;">
+    <footer class="rodape">
         <div class="container">
-            <p>&copy; 2024 Quilombo Digital - Todos os direitos reservados.</p>
+            <p>&copy; 2024 Quilombo Digital - Plataforma Acadêmica de Gestão Comunitária.</p>
         </div>
     </footer>
 </body>
