@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
-import { recursosHome } from '../data/dados';
+import Indicador from '../components/Indicador';
+import { recursosHome, indicadores } from '../data/dados';
 
 function Home() {
   return (
@@ -17,6 +18,15 @@ function Home() {
         </div>
         <div className="hero-imagem">
           <img src="/img/comunidade-quilombola.jpg" alt="Comunidade quilombola em atividade coletiva" />
+        </div>
+      </section>
+
+      <section className="impacto-secao" style={{ marginBottom: '50px' }}>
+        <h2>Números da Plataforma</h2>
+        <div className="indicadores-grid">
+          {indicadores.map((ind) => (
+            <Indicador key={ind.id} valor={ind.valor} label={ind.label} />
+          ))}
         </div>
       </section>
 

@@ -39,69 +39,44 @@ function Cadastro() {
           </div>
         )}
 
-        <div className="layout-formularios">
-          <form className="formulario" onSubmit={handleSubmit}>
-            <div className="campo">
-              <label htmlFor="nome">Nome da Comunidade ou Associação</label>
-              <input type="text" id="nome" name="nome" value={formData.nome} onChange={handleChange} required placeholder="Ex: Quilombo Boa Esperança" />
-            </div>
-            
-            <div className="campo">
-              <label htmlFor="responsavel">Nome do Responsável/Liderança</label>
-              <input type="text" id="responsavel" name="responsavel" value={formData.responsavel} onChange={handleChange} required placeholder="Nome completo" />
-            </div>
-            
-            <div className="campo">
-              <label htmlFor="tipo">Categoria Principal</label>
-              <select id="tipo" name="tipo" value={formData.tipo} onChange={handleChange}>
-                <option value="agricultura">Agricultura Familiar</option>
-                <option value="artesanato">Artesanato e Produção Manual</option>
-                <option value="cultura">Manifestação Cultural</option>
-                <option value="extrativismo">Extrativismo Sustentável</option>
-                <option value="outro">Outro (Especificar na descrição)</option>
-              </select>
-            </div>
-            
-            <div className="campo">
-              <label htmlFor="localidade">Localidade / Município</label>
-              <input type="text" id="localidade" name="localidade" value={formData.localidade} onChange={handleChange} required placeholder="Cidade e Estado" />
-            </div>
-            
-            <div className="campo">
-              <label htmlFor="descricao">Descrição da Iniciativa</label>
-              <textarea id="descricao" name="descricao" value={formData.descricao} onChange={handleChange} required placeholder="Descreva brevemente o que é produzido, quantas famílias estão envolvidas..."></textarea>
-            </div>
-            
-            <button type="submit" className="botao botao-full">Salvar Registro no Sistema</button>
-          </form>
-
-          <aside className="preview-card">
-            <h3>Pré-visualização da Ficha</h3>
-            <p className="preview-item">
-              <strong>Comunidade:</strong><br/>
-              {formData.nome || '---'}
-            </p>
-            <p className="preview-item">
-              <strong>Liderança:</strong><br/>
-              {formData.responsavel || '---'}
-            </p>
-            <p className="preview-item">
-              <strong>Tipo:</strong><br/>
-              <span className="preview-tipo">{formData.tipo}</span>
-            </p>
-            <p className="preview-item">
-              <strong>Local:</strong><br/>
-              {formData.localidade || '---'}
-            </p>
-            <div className="preview-info-text">
-              Esta ficha será adicionada aos relatórios gerais após a submissão.
-            </div>
-          </aside>
-        </div>
+        <form className="formulario" onSubmit={handleSubmit}>
+          <div className="campo">
+            <label htmlFor="nome">Nome da Comunidade ou Associação</label>
+            <input type="text" id="nome" name="nome" value={formData.nome} onChange={handleChange} required placeholder="Ex: Quilombo Boa Esperança" />
+          </div>
+          
+          <div className="campo">
+            <label htmlFor="responsavel">Nome do Responsável/Liderança</label>
+            <input type="text" id="responsavel" name="responsavel" value={formData.responsavel} onChange={handleChange} required placeholder="Nome completo" />
+          </div>
+          
+          <div className="campo">
+            <label htmlFor="tipo">Categoria Principal</label>
+            <select id="tipo" name="tipo" value={formData.tipo} onChange={handleChange}>
+              <option value="agricultura">Agricultura Familiar</option>
+              <option value="artesanato">Artesanato e Produção Manual</option>
+              <option value="cultura">Manifestação Cultural</option>
+              <option value="extrativismo">Extrativismo Sustentável</option>
+              <option value="outro">Outro (Especificar na descrição)</option>
+            </select>
+          </div>
+          
+          <div className="campo">
+            <label htmlFor="localidade">Localidade / Município</label>
+            <input type="text" id="localidade" name="localidade" value={formData.localidade} onChange={handleChange} required placeholder="Cidade e Estado" />
+          </div>
+          
+          <div className="campo">
+            <label htmlFor="descricao">Descrição da Iniciativa</label>
+            <textarea id="descricao" name="descricao" value={formData.descricao} onChange={handleChange} required placeholder="Descreva brevemente o que é produzido, quantas famílias estão envolvidas..."></textarea>
+          </div>
+          
+          <button type="submit" className="botao botao-full">Salvar Registro no Sistema</button>
+        </form>
       </div>
     </main>
   );
 }
 
-
 export default Cadastro;
+
